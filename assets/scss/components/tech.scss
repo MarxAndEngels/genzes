@@ -1,0 +1,93 @@
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px;
+  border-top: 2px solid $grey;
+  border-bottom: 2px solid $grey;
+  margin: 8px 0;
+  padding: 8px 0;
+  &.tech--offer-page{
+    width: calc(50% - 8px);
+    border: 0;
+    margin: 0;
+    gap: 12px;
+    @include grid-item;
+    @media screen and (max-width: $small-desktop){
+     gap: 10px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      order: 2;
+    }
+    .tech__item-name{
+      font-size: 16px;
+      @media screen and (max-width: $small-desktop){
+        font-size: 14px;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 12px;
+      }
+    }
+    .tech__item-info{
+      font-size: 16px;
+      @media screen and (max-width: $small-desktop){
+        font-size: 17px;
+      }
+      @media screen and (max-width: $mobile){
+        font-size: 12px;
+      }
+    }
+  }
+  &.tech--long{
+    .tech__item-name{
+      display: none;
+    }
+  }
+  &.tech--short{
+    .tech__item-info{
+      font-weight: 400;
+      color: #2a2a2a;
+      font-size: 15px;
+    }
+    .tech__item-name{
+      display: none;
+    }
+  }
+  &.tech--offer-small{
+    .tech__item {
+      @media screen and (max-width: $mobile){
+        width: auto;
+      }
+    }
+    @media screen and (max-width: $mobile){
+      gap: 8px;
+      justify-content: flex-start;
+    }
+    .tech__item-name{
+      display: none;
+    }
+    .tech__item-info{
+      @media screen and (max-width: $mobile){
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.tech__item {
+  width: calc(33% - 8px);
+  font-weight: 300;
+  &.tech__item--small{
+    display: none;
+  }
+}
+.tech__item-name{
+  color: $darkGrey;
+  font-size: 10px;
+}
+.tech__item-info{
+  color: $black;
+  font-size: 13px;
+  white-space: nowrap;
+}

@@ -1,0 +1,64 @@
+.h1__title{
+  margin: 16px 0;
+  @media screen and (max-width: $mobile) {
+    font-size: 20px;
+  }
+  &.h1__title--no-mb{
+    margin: 16px 0 0;
+  }
+  &.h1__title--hidden{
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: -999px;
+  }
+}
+
+.h2__title{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0;
+  color: $black;
+  @media screen and (max-width: $desktop){
+   font-size: 20px;
+  }
+  &.h2__title--no-margin-top{
+    margin: 0 0 16px;
+  }
+  &.h2__title--white{
+    color: #fff;
+  }
+}
+.h3__title{
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 0 8px 0;
+}
+
+.sub__title{
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: $black;
+  &.sub__title--white{
+    color: #fff;
+  }
+}
+.text__p ,.text__ul{
+  font-weight: 300;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+  @media screen and (max-width: $desktop){
+   font-size: 14px;
+    line-height: 18px;
+  }
+  a{
+    color: $blue;
+  }
+}
+.text__ul{
+  li{
+    margin-left: 24px;
+  }
+}

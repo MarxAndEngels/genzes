@@ -1,0 +1,56 @@
+.skeleton{
+  background: $lightGrey;
+}
+.skeleton__offer{
+  height: 436px;
+  .skeleton{
+    border-radius: $border-radius;
+  }
+}
+.skeleton__offer-image{
+  height: 225.5px;
+}
+.skeleton__offer-title{
+  height: 38px;
+  margin-top: 8px;
+}
+.skeleton__offer-tech{
+  height: 73px;
+  margin-top: 8px;
+}
+.skeleton__offer-price{
+  height: 20.5px;
+  margin-top: 8px;
+}
+.skeleton__offer-buttons{
+  height: 40px;
+  margin-top: 8px;
+}
+.skeleton__offer-page-title{
+  height: 34px;
+  margin: 16px 0;
+  @media screen and (max-width: $mobile){
+    margin: 8px 0;
+    height: 23px;
+  }
+}
+.skeleton__offer-page-slider{
+  height: 462px;
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  @media screen and (max-width: $mobile){
+    height: 280px;
+  }
+}
+.skeleton__offer-page-slide{
+  width: calc(50% - 8px);
+  height: 100%;
+  @media screen and (max-width: $mobile){
+    width: 100%;
+    &:last-child{
+      display: none;
+    }
+
+  }
+}

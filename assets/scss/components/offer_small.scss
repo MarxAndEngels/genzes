@@ -1,0 +1,66 @@
+.offer__small {
+  width: 100%;
+  background: $lightGrey;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+
+  &.offer__small--form {
+    margin-bottom: 8px;
+    @media screen and (max-width: $mobile) {
+     padding-bottom: 56px;
+    }
+  }
+}
+
+.offer__small-name {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 16px;
+  width: 100%;
+  gap: 16px;
+  .button{
+    margin-top: 6px;
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      left: 0;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    height: auto;
+  }
+}
+.offer__small-info{
+  width: 100%;
+  padding-right: 8px;
+}
+
+.offer__small-scale {
+  fill: $darkGrey;
+  pointer-events: none;
+  top: 4px;
+  left: 140px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  position: absolute;
+}
+
+.offer__small-image {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  width: 160px;
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
+}

@@ -1,0 +1,35 @@
+.contacts{
+  position: relative;
+}
+
+.contacts__map{
+  overflow: hidden;
+  border-radius: $border-radius;
+  position: relative;
+  z-index: 1;
+}
+.contacts__info{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  @media screen and (max-width: $mobile) {
+   width: calc(100% - 16px);
+  }
+  @include grid-item;
+  .button{
+    width: 100%;
+  }
+}
+.contacts__info-line{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.contacts__info-name{
+  font-size: 14px;
+  font-weight: 300;
+}

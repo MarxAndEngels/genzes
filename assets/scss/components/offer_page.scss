@@ -1,0 +1,172 @@
+.offer__content {
+  flex-wrap: wrap;
+  .offer__like{
+    margin-left: auto;
+  }
+}
+.offer__page-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.offer__page-top {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.offer__page-top-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.offer__page-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.offer__page-sub-name {
+  color: $darkGrey;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  gap: 8px;
+
+  span {
+    font-weight: 400;
+    color: $black;
+  }
+}
+
+.offer__page-slider {
+  //max-width: calc(100% - 88px);
+  margin: 0 auto 16px;
+  @media screen and (max-width: $mobile) {
+    margin: 0 auto 8px;
+  }
+}
+.offer__page-slide {
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: .24s;
+  img{
+    aspect-ratio: 4/3;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  &:hover {
+    opacity: .88;
+    transform: scale(1.01);
+  }
+}
+.offer__page-complectation{
+  @include grid-item;
+  width: calc(50% - 8px);
+  margin: 0;
+  gap: 8px;
+  z-index: 2;
+  position: relative;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    order: 3;
+  }
+}
+.offer__page-controls {
+  @include grid-item;
+  width: calc(50% - 8px);
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  @media screen and (max-width: $tablet) {
+    position: sticky;
+    top: 58px;
+    width: 100%;
+    order: 1;
+  }
+}
+.offer__page-controls-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__page-buttons-wrapper {
+  margin-top: 6px;
+  padding: 8px 0;
+  border-bottom: 2px solid $lightGrey;
+  display: flex;
+  gap: 8px;
+
+  .button {
+    flex: 1;
+  }
+}
+
+.offer__page-info {
+  width: calc(50% - 16px);
+  box-shadow: $box-shadow;
+  padding: 16px;
+  border-radius: $border-radius;
+}
+.offer__page-buttons-dealer{
+  text-align: left;
+  margin-top: 8px;
+}
+.complectation{
+  background: $light-blue;
+  padding: 16px;
+  border-radius: $border-radius;
+  margin-bottom: 16px;
+}
+.complectation__title{
+  font-weight: bold;
+  font-size: 16px;
+  color:$black;
+}
+.complectation__item{
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.offer__page-map{
+  width: calc(50% - 16px);
+  box-shadow: $box-shadow;
+  padding: 16px;
+  border-radius: $border-radius;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    padding: 8px;
+    order: 3;
+  }
+}
+.offer__page-title{
+  margin: 16px 0;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: $mobile){
+    font-size: 11px;
+    gap: 6px;
+    margin: 8px 0;
+  }
+}
+.offer__page-title__mark{
+  font-size: 1.8em;
+}
+.offer__page-title__folder{
+  font-size: 1.8em;
+}
+.offer__page-title__year{
+  font-size: 1.8em;
+}
+.offer__page-title__generation{
+  font-size: 1.8em;
+}

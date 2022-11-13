@@ -1,0 +1,52 @@
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  @media screen and (max-width: $desktop){
+    gap: 16px;
+  }
+  @media screen and (max-width: $tablet){
+    width: 100%;
+    overflow-x: scroll;
+    @include horizontal-scrollbar
+  }
+}
+.benefits__item {
+  flex: 1;
+  padding: 8px 16px;
+  border-radius: $inputBorderRadius;
+  box-shadow: $box-shadow;
+  font-size: 14px;
+  @media screen and (max-width: $desktop){
+    padding: 8px;
+    font-size: 12px;
+  }
+  @media screen and (max-width: $tablet){
+    min-width: 180px;
+  }
+}
+
+.benefits__item-text {
+
+}
+
+.benefits__item-line {
+  display: flex;
+  align-items: flex-start;
+}
+
+.benefits__item-bold {
+  font-weight: bold;
+}
+
+.benefits__item-icon {
+  width: 24px;
+  height: 24px;
+  fill: $mainColor;
+  margin-right: 8px;
+  @media screen and (max-width: $desktop){
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+}

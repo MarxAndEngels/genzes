@@ -1,0 +1,35 @@
+.catalog__items{
+  margin-top: 24px;
+  &.catalog__items--favorite{
+    min-height: 400px;
+  }
+}
+.catalog__items-line{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.catalog__filters-button {
+  color: $black;
+  cursor: pointer;
+  width: max-content;
+}
+
+.catalog__list {
+  margin-bottom: 16px;
+}
+
+.catalog__filters-controllers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  position: relative;
+}
+.catalog__filters-view{
+  display: flex;
+  gap: 8px;
+}

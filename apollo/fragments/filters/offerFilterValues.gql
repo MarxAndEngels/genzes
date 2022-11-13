@@ -1,0 +1,41 @@
+#import "./types/markFieldType.gql"
+#import "./types/folderFieldType.gql"
+#import "./types/generationFieldType.gql"
+#import "./types/gearboxFieldType.gql"
+#import "./types/engineTypeFieldType.gql"
+#import "./types/driveTypeFieldType.gql"
+#import "./types/bodyTypeFieldType.gql"
+#import "./types/ownerFieldType.gql"
+#import "./types/chosenFieldType.gql"
+
+fragment OfferFilterValues on OfferFilterValues {
+  mark{
+    ... MarkFieldType
+  }
+  folder{
+    ... FolderFieldType
+  }
+  generation{
+    ... GenerationFieldType
+  }
+  gearbox{
+    ... GearboxFieldType
+  }
+  engineType{
+    ... EngineTypeFieldType
+  }
+  driveType{
+    ... DriveTypeFieldType
+  }
+  bodyType{
+    ... BodyTypeFieldType
+  }
+  owner{
+    ... OwnerFieldType
+  }
+  year
+  price
+  chosen{
+    ... ChosenFieldType
+  }
+}

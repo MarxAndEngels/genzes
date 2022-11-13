@@ -1,0 +1,16 @@
+.steps {
+  display: flex;
+  gap: 16px;
+}
+
+.steps__item {
+  flex: 1;
+  padding: 8px 0;
+  background: $light-blue;
+  gap: 16px;
+}
+.steps__item-text{
+  font-size: 12px;
+  color: $blue;
+  text-align: center;
+}

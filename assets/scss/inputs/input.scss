@@ -1,0 +1,67 @@
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+  transition: .24s;
+  border-radius: $inputBorderRadius;
+  &.input__wrapper--error{
+    outline: 1px solid $error_text;
+    position: relative;
+    margin-bottom: 18px;
+    &:after{
+      content: 'Обязательное поле';
+      position: absolute;
+      font-size: 12px;
+      bottom: -16px;
+      left: 8px;
+      color: $error_text;
+    }
+  }
+  &.input__wrapper--form {
+    width: calc(50% - 4px);
+  }
+
+  &:focus {
+    outline: 1px solid rgba(0, 0, 0, .4);
+  }
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  border: none;
+  border-radius: $inputBorderRadius;
+  height: $inputHeight;
+  width: 100%;
+  padding: 0 16px;
+  background: #f3f3f3;
+  outline: none;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: $fontApple;
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: $fontApple;
+  }
+}
+
+.input_error {
+  outline: 3px solid $error;
+}
+
+.input[readonly] {
+  background: $backgroundGrey;
+  cursor: auto;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

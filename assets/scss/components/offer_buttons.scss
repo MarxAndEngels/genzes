@@ -1,0 +1,19 @@
+.offer__buttons{
+  &.offer__buttons--short{
+    display: flex;
+    gap: 8px;
+    .button{
+      flex: 1;
+    }
+  }
+  &.offer__buttons--page{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    gap: 8px;
+    .button{
+      min-width: calc(50% - 8px);
+      flex: 1;
+    }
+  }
+}

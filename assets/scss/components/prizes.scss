@@ -1,0 +1,44 @@
+.prizes {
+  padding: 16px 24px;
+  box-shadow: $box-shadow;
+  border-radius: $inputBorderRadius;
+  @media screen and (max-width: $desktop){
+   padding: 8px 16px;
+  }
+}
+
+.prizes__line {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  @media screen and (max-width: $desktop){
+    gap: 8px;
+  }
+}
+
+.prizes__item {
+  padding: 16px;
+  @media screen and (max-width: $desktop){
+   padding: 8px;
+  }
+}
+
+.prizes__item-image {
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  @media screen and (max-width: $desktop){
+   height: 64px;
+  }
+}
+
+.prizes__item-text {
+  width: 200px;
+  text-align: center;
+  margin: 8px auto 0;
+  @media screen and (max-width: $desktop){
+    width: 100%;
+    font-size: 14px;
+  }
+}

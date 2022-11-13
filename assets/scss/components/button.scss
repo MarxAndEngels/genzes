@@ -1,0 +1,100 @@
+.button {
+  display: flex;
+  height: $inputHeight;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  border-radius: $inputBorderRadius;
+  cursor: pointer;
+  transition: .24s;
+  width: fit-content;
+  background: $mainColor;
+  color: #fff;
+  &.button--credit{
+    padding: 0 16px;
+  }
+  &.button--filter{
+    width: 100%;
+  }
+  &.button--info{
+    background: $light-blue;
+    color: $blue;
+  }
+  &.button--callback{
+    background: $orange;
+    color: black;
+  }
+  &.button--form {
+    width: 100%;
+  }
+  &.button--more {
+    margin-top: 16px;
+    background: #fff;
+    border: 2px solid $mainColor;
+    color: $mainColor;
+    width: 100%;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  &.button--view {
+    background: $light-blue;
+    width: $inputHeight;
+    padding: 0;
+    transition: .24s;
+    @media screen and (max-width: $mobile) {
+      width: 32px;
+      height: 32px;
+    }
+    svg {
+      transition: .24s;
+      width: 24px;
+      height: 24px;
+    }
+    &.active{
+      background: $mainColor;
+      svg{
+        fill: #fff;
+      }
+    }
+  }
+  &.button--autoteka{
+    background: $light-blue;
+    width: content-box;
+    padding: 0 12px;
+    svg {
+      transition: .24s;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.button--like{
+    background: $light-blue;
+    width: content-box;
+    padding: 0 12px;
+    svg {
+      transition: .24s;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.button--disabled{
+    background: $grey;
+    color: $black;
+    pointer-events: none;
+  }
+  &.button--cookie{
+    padding: 0 16px;
+  }
+}
+.button--autoteka-text{
+  color: $black;
+  font-weight: bold;
+  margin-left: 6px;
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}

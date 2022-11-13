@@ -1,0 +1,28 @@
+.reviews{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  @media screen and (max-width: $mobile){
+    gap: 8px;
+  }
+}
+.reviews__item{
+  width: calc(25% - 12px);
+  height: 220px;
+  border-radius: $border-radius;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .24s;
+  @media screen and (max-width: $mobile){
+    width: calc(50% - 8px);
+    height: 132px;
+  }
+  &:hover{
+    opacity: .8;
+  }
+}
+.reviews__item-img{
+  width: 100%;
+}

@@ -1,0 +1,79 @@
+$desktop-container: 1248px;
+$desktop: 1400px;
+
+$small-desktop-container: 960px;
+$small-desktop: 1224px;
+
+$tablet-container: 720px;
+$tablet: 984px;
+
+$mobile-container: 100%;
+$mobile: 748px;
+
+$fontApple: -apple-system, system-ui, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Arial, sans-serif;
+
+$mainColor: #007aff;
+
+$mainColorShadow: rgba(161, 27, 31, .4);
+$mainColorHover: #4da2fe;
+// $orange: #ffa94d;
+$orange: #f7aa57;
+$red: #de1015;
+$green: #0dc268;
+$greenHover: #0cad5d;
+$black: #1e1e1e;
+$grey: #e7e7e7;
+$darkGrey: #818181;
+$lightGrey: #f4f4f4;
+$backgroundGrey: #f4f4f4;
+$lightGreyHover: #e5e5e5;
+$skeletonGrey: #f4f4f4;
+$error: rgba(255, 0, 0, 0.5);
+$error_text: rgb(220, 15, 15);
+$light-blue: rgba(51, 94, 234, .1);
+$blue: #335eea;
+
+$transitionHover: 0.2s cubic-bezier(0.37, 0, 0.63, 1);
+
+$box-shadow: 0 0 48px -16px rgb(0 0 0 / 32%);
+$border-radius: 8px;
+$inputBorderRadius: 4px;
+$inputHeight: 40px;
+
+//MIXINS
+@mixin grid-item {
+  padding: 16px;
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  @media screen and (max-width: $mobile) {
+    padding: 8px;
+  }
+}
+@mixin horizontal-scrollbar {
+  &::-webkit-scrollbar {
+    height: 4px;
+    background-color: #e8e8e8; /* or add it to the track */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $mainColor;
+    border-radius: 5px;
+  }
+}
+
+@mixin lazyload {
+  @media screen and (max-width: $mobile){
+    opacity: 0;
+    visibility: hidden;
+    transition: $transitionHover;
+    will-change: opacity;
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+@mixin lazyloaded {
+  opacity: 1;
+  visibility: visible;
+  transition: $transitionHover;
+  -webkit-backface-visibility: visible;
+}

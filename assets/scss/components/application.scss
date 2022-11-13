@@ -1,0 +1,28 @@
+.application__line{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+  @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+}
+.application__line-block{
+  @include grid-item;
+  width: calc(50% - 8px);
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}
+.application__bank{
+  margin-bottom: 16px;
+  img{
+    max-width: 100%;
+    max-height: 80px;
+  }
+}
+.about__images{
+  img{
+    width: 100%;
+  }
+}

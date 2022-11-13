@@ -1,0 +1,11 @@
+.offer__controls{
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  &.offer__controls--short{
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    right: 8px;
+  }
+}

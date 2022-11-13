@@ -1,0 +1,140 @@
+.collections {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  @media screen and (max-width: $tablet) {
+    gap: 8px;
+  }
+}
+
+.collections__item {
+  width:calc(20% - 14px);
+  height: 172px;
+  padding: 24px 0 24px 24px;
+  position: relative;
+  border-radius: $border-radius;
+  background: $mainColor;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: background .24s;
+  overflow: hidden;
+  @media screen and (max-width: $tablet) {
+    padding: 16px 0 16px 16px;
+  }
+  @media screen and (max-width: $mobile){
+    padding: 8px 0 8px 8px;
+  }
+  @media screen and(max-width: $mobile) {
+    height: 113px;
+    min-width: calc(33% - 8px);
+    width: calc(50% - 8px);
+    order: 1;
+    border-radius: $inputBorderRadius;
+  }
+  &:hover {
+    background: $mainColorHover;
+    .collections__item-image {
+      transform: translateX(8px) scale(1.04);
+    }
+    .collections__slide-element{
+      transform: translateX(8px);
+    }
+    .collections__slide-car{
+      transform: scale(1.08);
+    }
+  }
+  &.collections__item--slide{
+    min-width: calc(80% - 8px);
+    height: 172px;
+    @media screen and(max-width: $mobile) {
+      order: 0;
+      min-width: 100%;
+      height: 148px;
+    }
+  }
+  &.collections__item--black{
+    background: $black;
+  }
+}
+
+.collections__item-title {
+  font-size: 24px;
+  font-weight: bold;
+  @media screen and(max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+.collections__item-text{
+  font-size: 16px;
+  width: 50%;
+  margin-top: 16px;
+  font-weight: 400;
+  @media screen and(max-width: $mobile) {
+    width: 60%;
+    font-size: 14px;
+  }
+}
+
+.collections__item-image {
+  transition: transform .24s;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  transform: translateX(24px);
+  @media screen and (max-width: $tablet) {
+    transform: translateX(0);
+  }
+  @media screen and(max-width: $mobile) {
+    width: 110px;
+    margin-top: 18px;
+    transform: translateX(8px);
+  }
+}
+.collections__slide-element{
+  transition: transform .24s;
+  width: 320px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  transform: translateX(24px);
+  z-index: 2;
+  @media screen and(max-width: $mobile) {
+    width: 200px;
+    top: 32px;
+    right: -48px;
+  }
+}
+.collections__slide-car{
+  transition: transform .24s;
+  width: 180px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 280px;
+  z-index: 1;
+  @media screen and(max-width: $mobile) {
+    width: 64px;
+    right: 88px;
+    top: 8px;
+  }
+}
+.collections__slider-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.collections__slider-nav-item{
+  width: 12px;
+  height: 12px;
+  background: $mainColor;
+  transition: .24s;
+  cursor: pointer;
+  border-radius: 16px;
+  margin: 0 4px;
+  &:hover{
+    background: $mainColorHover;
+  }
+}

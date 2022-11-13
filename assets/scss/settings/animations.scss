@@ -1,0 +1,52 @@
+@keyframes callback {
+  0% {
+    width: 100%;
+    opacity: 1;
+  }
+  50% {
+    width: 120%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;;
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: .32s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  @media screen and (max-width: $mobile) {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+
+
+
+.slide-enter-active, .slide-leave-active {
+  transition: .32s;
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.32s;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}

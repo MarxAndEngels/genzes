@@ -1,0 +1,27 @@
+.tippy-popper {
+  z-index: 250!important;
+  @media screen and (max-width: $mobile) {
+    display: none!important;
+  }
+}
+
+.tippy--question {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.tippy__icon {
+  width: 16px;
+  height: 16px;
+  fill: $mainColor;
+}
+
+.tippy__text {
+  color: white;
+  padding: 8px;
+}

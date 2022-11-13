@@ -1,0 +1,41 @@
+.thanks{
+  margin-top: 16px;
+  width: 100%;
+}
+.inner{
+  padding: 16px;
+  border-radius: $border-radius;
+  box-shadow: 0 1px 45px -12px rgb(0 0 0 / 40%);
+  @media screen and (max-width: $mobile) {
+    padding: 16px 8px;
+  }
+}
+.title_line{
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: $mobile) {
+    h2{
+      font-size: 18px;
+    }
+  }
+  svg{
+    fill:$mainColor;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    @media screen and (max-width: $mobile) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.text{
+  color: $darkGrey;
+  margin-top: 8px;
+  font-weight: 300;
+}
+.back--link{
+  color: $mainColor;
+  margin-top: 8px;
+  display: block;
+}

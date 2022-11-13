@@ -1,0 +1,33 @@
+.privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  @media screen and (max-width: $tablet){
+    flex-direction: column;
+  }
+}
+.privacy__nav{
+  min-width: 320px;
+  width: 320px;
+  position: sticky;
+  top: 64px;
+  @include grid-item;
+  @media screen and (max-width: $tablet){
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+  }
+}
+.privacy__link{
+  margin-bottom: 16px;
+  text-decoration: underline $mainColor;
+  cursor: pointer;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.privacy__content{
+  width: 100%;
+  @include grid-item
+}

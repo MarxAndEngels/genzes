@@ -1,0 +1,21 @@
+.cookie{
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  width: 100%;
+  display: none;
+  &.cookie--active{
+    z-index: 100;
+    display: block;
+  }
+}
+.cookie__text{
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}

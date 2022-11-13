@@ -1,0 +1,40 @@
+.callback{
+  position: fixed;
+  width: 300px;
+  right: -292px;
+  top: 0;
+  transition: right .16s ease-in-out;
+  z-index: 2;
+  border-left: 10px solid $mainColor;
+  height: 100vh;
+  background: #fff;
+  &.callback--active{
+    right: 0;
+  }
+}
+.callback__figure{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -36px;
+  width: 40px;
+  height: 200px;
+  fill: $mainColor;
+  z-index: 1;
+  cursor: pointer;
+  &:hover + .callback__phone{
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+.callback__phone{
+  position: absolute;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  top: calc(50% + 4px);
+  left: -28px;
+  z-index: 2;
+  transform: translateY(-50%);
+  transition: .24s;
+}
