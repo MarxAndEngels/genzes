@@ -1,10 +1,16 @@
 export const state = () => ({
-    marks: []
+    marks: [],
+    popularMarks: [
+        'audi', 'bmw', 'ford', 'hyundai', 'kia', 'mazda', 'mercedes-benz', 'mitsubishi', 'nissan', 'skoda'
+    ],
 })
 
 export const getters = {
     marks(state) {
         return state.marks
+    },
+    popularMarks: (state) => {
+        return state.popularMarks
     },
 }
 

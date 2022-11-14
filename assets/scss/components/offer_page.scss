@@ -82,11 +82,11 @@
   @include grid-item;
   width: calc(50% - 8px);
   position: sticky;
-  top: 80px;
+  top: 120px;
   z-index: 10;
   @media screen and (max-width: $tablet) {
     position: sticky;
-    top: 58px;
+    top: 75px;
     width: 100%;
     order: 1;
   }

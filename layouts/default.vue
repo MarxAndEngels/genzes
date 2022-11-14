@@ -3,7 +3,8 @@
 	     :class="{'wrapper--fixed': fixed}"
 	     tabindex="0"
 	     @keyup.esc="closeModal">
-		<Header :fixed="fixed" />
+		<!-- <Header :fixed="fixed" /> -->
+		<Header-new/>
 		<div class="container">
 			<crumbs />
 			<transition name="page">

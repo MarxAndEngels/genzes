@@ -25,6 +25,11 @@
 .favorite__img{
   max-width: 620px;
   width: 100%;
+  opacity: 0.4;
   display: block;
   margin: 16px auto;
+}
+
+.button--like-icon{
+  stroke: $black;
 }

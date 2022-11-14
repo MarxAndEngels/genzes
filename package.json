@@ -22,14 +22,14 @@
         "k-domains": "^1.2.5",
         "lodash": "^4.17.21",
         "nuxt": "^2.15.7",
+        "nuxt-lazysizes": "^1.4.2",
         "nuxt-start": "^2.15.8",
         "v-owl-carousel": "^1.0.8",
         "vue-lodash": "^2.1.2",
         "vue-scrollto": "^2.20.0",
-        "nuxt-lazysizes": "^1.4.2",
         "vue-slide-toggle": "^1.1.1",
-        "vuejs-paginate": "^2.1.0",
-        "vue-tippy": "^4.14.0"
+        "vue-tippy": "^4.14.0",
+        "vuejs-paginate": "^2.1.0"
     },
     "devDependencies": {
         "@nuxtjs/device": "^2.1.0",
