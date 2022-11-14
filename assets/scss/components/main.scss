@@ -20,9 +20,9 @@ body {
 
 .wrapper {
   &.wrapper--fixed{
-    padding-top: 64px;
+    padding-top: 113px;
     @media screen and(max-width: $mobile) {
-      padding-top: 56px;
+      padding-top: 65px;
     }
   }
 }

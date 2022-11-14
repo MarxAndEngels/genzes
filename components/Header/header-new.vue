@@ -31,12 +31,14 @@
               <!-- <svg-icon class="main-logo_icon" name="logo" /> -->
             </nuxt-link>
             <div class="nav" :class="{isOpen:isOpen}">
-              <nuxt-link @click.native="isOpen = false" :to="'/used'" class="nav_link">С пробегом</nuxt-link>
+              <nuxt-link @click.native="isOpen = false" :to="'/cars'" class="nav_link">Каталог</nuxt-link>
               <nuxt-link @click.native="isOpen = false" :to="'/credit'" class="nav_link">Автокредит</nuxt-link>
   <!--            <nuxt-link @click.native="isOpen = false" :to="'/installments'" class="nav_link">Рассрочка</nuxt-link>-->
               <nuxt-link @click.native="isOpen = false" :to="'/buyout'" class="nav_link">Выкуп</nuxt-link>
               <nuxt-link @click.native="isOpen = false" :to="'/exchange'" class="nav_link">Трейд-ин</nuxt-link>
-              <nuxt-link @click.native="isOpen = false" :to="'/contacts'" class="nav_link">Контакты</nuxt-link>
+              <nuxt-link @click.native="isOpen = false" :to="'/exchange'" class="nav_link">Банки</nuxt-link>
+                     <nuxt-link @click.native="isOpen = false" :to="'/contacts'" class="nav_link">Контакты</nuxt-link>
+              <nuxt-link @click.native="isOpen = false" :to="'/exchange'" class="nav_link">Отзывы</nuxt-link>
               <nuxt-link @click.native="isOpen = false" :to="'/about'" class="nav_link">Об автосалоне</nuxt-link>
             </div>
             <div class="mobile_address">
