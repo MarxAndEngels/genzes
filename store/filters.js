@@ -1,6 +1,6 @@
 export const state = () => ({
     filters: {},
-    showFilters: false
+    showFilters: true
 })
 
 export const getters = {

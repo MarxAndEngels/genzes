@@ -4,7 +4,7 @@
 	     tabindex="0"
 	     @keyup.esc="closeModal">
 		<!-- <Header :fixed="fixed" /> -->
-		<header-new/>
+		<Header/>
 		<div class="container">
 			<crumbs />
 			<transition name="page">

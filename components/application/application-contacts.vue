@@ -10,7 +10,7 @@
 					{{settings[item.slug]}}
 				</div>
 			</div>
-			<buttons-callback @click/>
+			<buttons-callback-phone @click/>
 		</div>
 	</div>
 </template>

@@ -6,10 +6,8 @@
 					<div class="footer__nav-item footer__nav-item--logo">
 						<nuxt-link to="/"
 						           class="footer__nav-item-link">
-							<img v-if="isMirror" src="~/assets/img/logo-mirror.svg"
-							     alt="">
-							<img v-else src="~/assets/img/logo.svg"
-							     alt="">
+							<img class="main-logo_icon" src="~/assets/img/logo-main.svg"
+							     alt="logo">
 						</nuxt-link>
 					</div>
 					<div class="footer__nav-item">

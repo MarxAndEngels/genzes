@@ -3,9 +3,9 @@
 		<collections-item v-for="item in collections"
 		                  :key="item.title"
 		                  :item="item" />
-		<collections-item black :item="black"/>
-		<collections-item slide
-		                  :item="slides[currentSlide]" />
+		<!-- <collections-item black :item="black"/> -->
+		<!-- <collections-item slide
+		                  :item="slides[currentSlide]" /> -->
 	</div>
 </template>
 

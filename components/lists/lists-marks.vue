@@ -63,7 +63,7 @@ export default {
 		}),
 		mark_list() {
 			if (this.$device.isMobile) {
-				return this.full ? this.marks : this.marks.slice(0, 8)
+				return this.full ? this.marks : this.marks.slice(0, 10)
 			}
 			return this.marks
 		}

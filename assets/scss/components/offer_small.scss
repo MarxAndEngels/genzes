@@ -42,6 +42,10 @@
   padding-right: 8px;
 }
 
+.offer__price--small > .offer__price-credit{
+  margin-left: 10px !important;
+}
+
 .offer__small-scale {
   fill: $darkGrey;
   pointer-events: none;
