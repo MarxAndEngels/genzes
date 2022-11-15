@@ -33,13 +33,21 @@ export default {
 					slug: 'address'
 				},
 				{
+					name: 'Номер телефона',
+					slug: 'phone'
+				},
+				{
+					name: 'График работы в буднии дни',
+					slug: 'phone'
+				},
+				{
+					name: 'График работы в буднии дни ',
+					slug: 'phone1'
+				},
+				{
 					name: 'E-mail',
 					slug: 'email'
 				},
-				{
-					name: 'Номер телефона',
-					slug: 'phone'
-				}
 			]
 		}
 	},

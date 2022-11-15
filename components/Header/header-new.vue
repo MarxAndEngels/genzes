@@ -36,9 +36,9 @@
   <!--            <nuxt-link @click.native="isOpen = false" :to="'/installments'" class="nav_link">Рассрочка</nuxt-link>-->
               <nuxt-link @click.native="isOpen = false" :to="'/buyout'" class="nav_link">Выкуп</nuxt-link>
               <nuxt-link @click.native="isOpen = false" :to="'/exchange'" class="nav_link">Трейд-ин</nuxt-link>
-              <nuxt-link @click.native="isOpen = false" :to="'/exchange'" class="nav_link">Банки</nuxt-link>
+              <nuxt-link @click.native="isOpen = false" :to="'/banks'" class="nav_link">Банки</nuxt-link>
                      <nuxt-link @click.native="isOpen = false" :to="'/contacts'" class="nav_link">Контакты</nuxt-link>
-              <nuxt-link @click.native="isOpen = false" :to="'/exchange'" class="nav_link">Отзывы</nuxt-link>
+              <nuxt-link @click.native="isOpen = false" :to="'/reviews'" class="nav_link">Отзывы</nuxt-link>
               <nuxt-link @click.native="isOpen = false" :to="'/about'" class="nav_link">Об автосалоне</nuxt-link>
             </div>
             <div class="mobile_address">

@@ -29,7 +29,7 @@ export default {
 	},
 	methods: {
 		scrollToElem() {
-			let headerHeight = this.$device.isMobile ? 64 : 80
+			let headerHeight = this.$device.isMobile ? 64 : 130
 			let currentRef = 'marks'
 			 if (this.$route.name === 'cars-mark') {
 				currentRef = 'folders'

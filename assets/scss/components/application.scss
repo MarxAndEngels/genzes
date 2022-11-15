@@ -7,9 +7,24 @@
     flex-wrap: wrap;
   }
 }
+.application__line_about{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+  @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+}
 .application__line-block{
   @include grid-item;
   width: calc(50% - 8px);
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}
+.application__line-block_about{
+  width: 100%;
   @media screen and (max-width: $tablet) {
     width: 100%;
   }

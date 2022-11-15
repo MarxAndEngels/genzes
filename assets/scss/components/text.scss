@@ -43,7 +43,7 @@
     color: #fff;
   }
 }
-.text__p ,.text__ul{
+.text__p ,.text__ul, .text__about{
   font-weight: 300;
   margin-bottom: 16px;
   font-size: 14px;
@@ -56,6 +56,14 @@
   a{
     color: $blue;
   }
+}
+.text_wrapper{
+  padding: 20px;
+}
+.text__about{
+  font-size: 18px;
+  line-height: 1.5;
+  text-indent: 10px;
 }
 .text__ul{
   li{

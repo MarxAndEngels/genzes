@@ -107,12 +107,12 @@ a{
     z-index: 16;
   }
   img{
-    max-width: 200px;
+    max-width: 210px;
     max-height: 62px;
     pointer-events: none;
     @media screen and (max-width:$tablet){
-      max-width: 160px;
-      max-height: 48px;
+      max-width: 177px;
+      max-height: 52px;
       margin-left: 24px;
 
     }
@@ -167,7 +167,7 @@ a{
     width: 100vw;
     height: calc(100vh - 67px);
     z-index: 15;
-    top: 72px;
+    top: 66px;
     left: 0;
     transform: translateX(-100%);
     background: $grey;

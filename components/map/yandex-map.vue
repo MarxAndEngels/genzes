@@ -1,5 +1,6 @@
 <template>
 	<div class="map">
+		<!-- 55.716691, 37.765166 -->
 		<client-only>
 			<yandex-map
 					v-if="ready"
