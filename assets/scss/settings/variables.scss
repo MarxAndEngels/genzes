@@ -10,6 +10,18 @@ $tablet: 984px;
 $mobile-container: 100%;
 $mobile: 748px;
 
+
+
+// @font-face {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url('~assets/fonts/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+// }
+
+// $fontMain:  'Montserrat', sans-serif;
+
 $fontApple: -apple-system, system-ui, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Arial, sans-serif;
 
 $mainColor: #007aff;
@@ -39,7 +51,7 @@ $transitionHover: 0.2s cubic-bezier(0.37, 0, 0.63, 1);
 $box-shadow: 0 0 48px -16px rgb(0 0 0 / 32%);
 $border-radius: 8px;
 $inputBorderRadius: 4px;
-$inputHeight: 40px;
+$inputHeight: 48px;
 
 //MIXINS
 @mixin grid-item {

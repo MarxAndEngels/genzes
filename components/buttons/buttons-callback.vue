@@ -1,6 +1,6 @@
 <template>
 	<div @click="click" class="button button--info button--callback">
-		Оставить заявку
+		Забронировать
 	</div>
 </template>
 <script>

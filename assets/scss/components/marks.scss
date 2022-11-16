@@ -117,3 +117,18 @@
   font-size: 14px;
   transition: .24s;
 }
+
+.wrapper__emblems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper__emblems_item{
+  font-size: 18px;
+}
+
+.wrapper__emblems_icon{
+  width: 36px;
+  height: 36px;
+}

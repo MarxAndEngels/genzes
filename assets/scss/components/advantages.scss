@@ -26,7 +26,7 @@
 
 .advantages__item {
   width: calc(25% - 12px);
-  background: $mainColor;
+  background: radial-gradient(circle at 55% 45%, #76c6f4, $mainColor);
   color: #fff;
   padding: 8px;
   border-radius: $border-radius;

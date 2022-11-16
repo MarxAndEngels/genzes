@@ -1,6 +1,6 @@
 <template>
 	<div class="form form--credit">
-		<h3 class="h3__title">
+		<h3 class="h3__title_form">
 				Укажите данные автомобиля
 		</h3>
 		<div class="inputs">
@@ -51,7 +51,7 @@
 		</div>
 		
 		<div class="personal__data">
-			<h3 class="h3__title">
+			<h3 class="h3__title_form">
 				Укажите свои данные
 			</h3>
 			<div class="input__wrapper"

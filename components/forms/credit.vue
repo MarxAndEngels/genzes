@@ -2,7 +2,7 @@
 	<div class="form form--credit">
 		<div class="form__chose-car"
 		     v-if="!modal">
-			<h3 class="h3__title">
+			<h3 class="h3__title_form">
 				Выберите автомобиль
 			</h3>
 			<div class="selects">
@@ -44,7 +44,7 @@
 		</div>
 		<div class="credit__conditions"
 		     v-if="!modal">
-			<h3 class="h3__title">
+			<h3 class="h3__title_form">
 				Кредитные условия
 			</h3>
 			<forms-credit-calculator :offer="modalOffer || chosenOffer" />
@@ -55,7 +55,7 @@
 			<offer-small :offer="modalOffer" />
 		</div>
 		<div class="personal__data">
-			<h3 class="h3__title">
+			<h3 class="h3__title_form">
 				Укажите свои данные
 			</h3>
 			<div class="input__wrapper"

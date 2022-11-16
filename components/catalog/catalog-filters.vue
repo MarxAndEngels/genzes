@@ -245,6 +245,11 @@ export default {
 			return queries
 		},
 	},
+	mounted() {
+		if (this.$device.isMobile) {
+		this.setShowFilters(false)
+		}
+	},
 	async fetch() {
 		await this.getFilters(this.filterParams)
 	}

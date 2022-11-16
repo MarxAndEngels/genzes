@@ -1,5 +1,6 @@
 <template>
 	<div class="catalog__list">
+		<lists-marks-favorites/>
 		<lists-marks ref="marks" class="list__marks" />
 		<lists-folders ref="folders"
 		               v-if="$route.params.mark"

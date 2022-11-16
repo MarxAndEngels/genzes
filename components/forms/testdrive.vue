@@ -1,6 +1,6 @@
 <template>
 	<div class="form">
-		<h3 class="h3__title">
+		<h3 class="h3__title_form">
 			Укажите свои данные
 		</h3>
 		<div class="input__wrapper"
