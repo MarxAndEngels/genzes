@@ -68,6 +68,12 @@ export default {
 		currentYearTo() {
 			return this.$route
 		},
+		currentPriceFrom() {
+		return Number(this.$route.query.price_from) || null
+		},
+		currentPriceTo() {
+		return Number(this.$route.query.price_to) || null
+		},
 		currentOwner() {
 			return Number(this.$route.query.owners) || null
 		},
@@ -80,6 +86,8 @@ export default {
 				body_type_id_array: this.currentBodyType ? [this.currentBodyType] : null,
 				engine_type_id_array: this.currentEngineType ? [this.currentEngineType] : null,
 				year_from: this.currentYearFrom,
+				price_from: this.currentPriceFrom,
+				price_to: this.currentPriceTo,
 				page: 1,
 				limit: this.limit || 18
 			}

@@ -36,6 +36,7 @@ export default {
         {src: 'plugins/owl.js', mode: 'client'},
         {src: '~/plugins/inputmask.js', mode: 'client'},
         {src: '~/plugins/ymapPlugin.js', mode: 'client'},
+        {src: '~/plugins/rangeSlider.js', mode: 'client'},
         '~/plugins/lodash'
     ],
     buildModules: ['nuxt-lazysizes'],

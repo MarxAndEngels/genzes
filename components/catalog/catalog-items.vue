@@ -36,6 +36,12 @@ export default {
 		currentPagination() {
 			return Number(this.$route.query.page ? this.$route.query.page : 1)
 		},
+	    currentPriceFrom() {
+		return Number(this.$route.query.price_from) || null
+		},
+		currentPriceTo() {
+		return Number(this.$route.query.price_to) || null
+		},
 		currentVariables() {
 			return {
 				mark_slug_array: this.$route.params.mark ? [this.$route.params.mark] : null,
@@ -47,6 +53,8 @@ export default {
 				sort: this.sort ? this.sort : this.$route.query.sort ? this.$route.query.sort : null,
 				year_from: Number(this.$route.query.yearFrom),
 				page: this.currentPagination,
+				price_from: this.currentPriceFrom,
+				price_to: this.currentPriceTo,
 				limit: this.limit || 12
 			}
 		}

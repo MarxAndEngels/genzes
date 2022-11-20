@@ -1,6 +1,6 @@
 <template>
 	<client-only v-if="isReady">
-		<carousel class="slider__main" :dots="true" :autoplay='true' :nav="true" :items="1" loop>
+		<carousel class="slider__main" :dots="true" :autoplay='true' :nav="true" :items="1" :loop='true'>
 			<template slot="prev"><span class="prev main slider_nav_arrow"></span></template>
 			<template slot="next"><span class="next main slider_nav_arrow"></span></template>
 			<div class="slider__main-slide" v-for="(slide, index) in slides" :key="index">

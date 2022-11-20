@@ -2,6 +2,7 @@
 	<div class="main__page">
 		<h1 class="h1__title h1__title--hidden">{{ pageTitle }}</h1>
 		<sliders-main/>
+			<lists-marks-favorites ref="marks"/>
 		<lists-marks />
 		<h2 class="h2__title">Последние поступления</h2>
 		<catalog

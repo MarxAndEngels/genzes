@@ -39,5 +39,8 @@
     padding: 4px 8px;
     display: block;
     cursor: pointer;
+    @media screen and (max-width:$tablet){
+      padding: 4px 0px;
+    }
   }
 }

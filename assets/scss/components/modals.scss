@@ -25,7 +25,7 @@
   //  background: rgba(0,0,0,.8);
   //}
 }
-.modal__content{
+.modal__content, .modal__content_filter{
   padding: 16px;
   width: 480px;
   min-height: 270px;
@@ -51,12 +51,19 @@
    padding: 88px 12px;
   }
 }
-.modal__close{
+
+.modal__content_filter{
+  @media screen and (max-width: $mobile) {
+    padding: 0px 12px;
+   }
+}
+
+.modal__close, .modal__close_filter{
   position: absolute;
   top: 8px;
   right: 16px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 33px;
   @media screen and (max-width: $mobile) {
    top: 64px;
   }
@@ -64,6 +71,12 @@
     opacity: .6;
   }
 }
+.modal__close_filter{
+  @media screen and (max-width: $mobile) {
+    top: 6px;
+   }
+}
+
 .modal__title{
   font-size: 18px;
   font-weight: bold;

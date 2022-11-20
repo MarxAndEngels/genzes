@@ -6,9 +6,9 @@
   }
 
   &.select__wrapper--filter {
-    width: calc(25% - 6px);
+    width: calc(14% - 6px);
     @media screen and (max-width: $small-desktop) {
-      width: calc(50% - 8px);
+      width: 100%;
     }
   }
 }
@@ -58,7 +58,7 @@
   height: $inputHeight;
   border: none;
   display: flex;
-  padding: 0 32px 0 16px;
+  padding: 0 32px 4px 16px;
   align-items: center;
   // background: $lightGrey;
   border: 1px solid #afafaf;

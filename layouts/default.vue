@@ -21,6 +21,7 @@
 		</div>
 		<modal-main />
 		<modal-autoteka />
+		<modal-filters />
 		<Footer />
 		<cookie />
 		<!--<callback-modal/>-->

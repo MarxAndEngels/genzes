@@ -50,7 +50,8 @@ export default {
 		sort(item) {
 			this.activeSort = item.title
 			this.open = false
-			this.$router.push({path: this.$route.fullPath, query: {sort: item.slug}})
+			console.log(item)
+			this.$router.push({path: this.$route.fullPath, query: { page: 1,sort: item.slug}})
 		},
 		isActive(item) {
 			return this.$route.query.sort === item.slug

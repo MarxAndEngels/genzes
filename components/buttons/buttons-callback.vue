@@ -1,6 +1,6 @@
 <template>
 	<div @click="click" class="button button--info button--callback">
-		Забронировать
+		Обратный звонок
 	</div>
 </template>
 <script>
@@ -15,7 +15,7 @@ export default {
 		async click() {
 			await this.openModal({
 				type: 'callback',
-				title: `Заявка на автомобиль`,
+				title: `Обратный звонок`,
 				offer: this.offer
 			})
 		},

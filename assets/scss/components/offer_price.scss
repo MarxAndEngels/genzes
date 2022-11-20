@@ -25,11 +25,16 @@
   color: $mainColor;
   font-weight: bold;
   font-size: 1.5em;
+  @media screen and (max-width: $mobile){
+      font-size: 1em;
+  }
 }
 
 .offer__price-credit {
   font-weight: 500;
   font-size: 1em;
   margin-left: auto;
-
+  @media screen and (max-width: $mobile){
+      font-size: 0.7em;
+  }
 }

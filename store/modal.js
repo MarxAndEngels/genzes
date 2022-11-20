@@ -1,6 +1,7 @@
 export const state = () => ({
     modal: false,
     modalAutoteka: false,
+    modalFilter: true,
     modalType: '',
     modalTitle: '',
     modalSubTitle: '',
@@ -12,6 +13,9 @@ export const getters = {
     },
     modalAutoteka(state) {
         return state.modalAutoteka
+    },
+    modalFilter(state) {
+        return state.modalFilter
     },
     modalType(state) {
         return state.modalType
@@ -32,6 +36,9 @@ export const mutations = {
     },
     SET_MODAL_AUTOTEKA(state, data) {
         state.modalAutoteka = data
+    },
+    SET_MODAL_FILTER(state, data) {
+        state.modalFilter = data
     },
     SET_MODAL_TYPE(state, data) {
         state.modalType = data

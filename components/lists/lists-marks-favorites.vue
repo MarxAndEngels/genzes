@@ -1,15 +1,21 @@
 <template>
 	<div class="wrapper__emblems">
+
 		<div v-for="item of popular" :key="item.slug">
+					<nuxt-link :to="`/${catalogRoute}/${item.slug}`">
+					<div class='wrapper__emblems_item'>
             <svg-icon class="wrapper__emblems_icon" :name="`emblems/${item.slug}-logo`"/>
-            <span class="wrapper__emblems_item">{{ item.title }}</span>
-        </div>
+            <div class="wrapper__emblems_title">{{ item.title }}</div>
+								</div>
+					        </nuxt-link>
+		</div>
+
 	</div>
 
 </template>
 
 <script>
-
+import {mapGetters} from "vuex";
 export default {
 	data() {
 		return {
@@ -41,5 +47,11 @@ export default {
 			]
 		}
 	},
+	computed: {
+		...mapGetters({
+			settings: 'settings/settings',
+			catalogRoute: 'settings/catalogRoute'
+		}),
+	}
 }
 </script>
